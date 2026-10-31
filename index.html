@@ -91,8 +91,8 @@ const GAMES=[
  {id:'deserts',n:'Deserts',path:'natural-wonders-deserts',setup:()=>`S.where='World';S.mode=${JSON.stringify(R(['rank','name']))};S.depthn=${R([3,5])};S.rounds=1;S.locZoom=1;`},
  {id:'borders',n:'How Many Borders?',path:'natural-wonders-how-many-borders',setup:()=>`S.where='World';S.level=${JSON.stringify(R(['easy','hard']))};S.rounds=1;S.locZoom=1;`},
  {id:'rcities',n:'River Cities',path:'natural-wonders-river-cities',setup:()=>`S.where='World';S.k=2;S.rounds=1;`},
- {id:'bigger',n:'Where is Bigger?',path:'natural-wonders-where-is-bigger',setup:()=>`S.mode=${JSON.stringify(R(['names','hidden']))};S.count=3;S.diff='medium';S.region='world';`},
- {id:'five',n:'Which of Five?',path:'natural-wonders-which-of-five',setup:()=>`S.mode='bigger';S.rounds3=1;S.diff='medium';S.region='world';`},
+ {id:'bigger',n:'Where is Bigger?',path:'natural-wonders-where-is-bigger',setup:()=>`S.mode=${JSON.stringify(R(['names','hidden']))};S.count=3;S.diff='easy';S.region='world';`},
+ {id:'five',n:'Which of Five?',path:'natural-wonders-which-of-five',setup:()=>`S.mode='bigger';S.rounds3=1;S.diff='easy';S.region='world';`},
  {id:'forests',n:'Forests',path:'natural-wonders-forests',setup:()=>`S.where='World';S.mode=${JSON.stringify(R(['rank','name']))};S.depthn=${R([3,5])};S.rounds=1;S.locZoom=1;`}];
 const GBY=Object.fromEntries(GAMES.map(g=>[g.id,g]));
 let M={screen:'menu',rounds:10,timed:true,plan:[],cur:0,res:[],left:0,frames:{},t0:0,poll:null};
